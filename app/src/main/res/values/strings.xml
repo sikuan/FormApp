@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MAPD711 Assignment1</string>
+    <string name="textTitle">Student input Form:</string>
+    <string name="textTitle_next">Student Profile:</string>
+
+    <string name="fullName">Your full name:</string>
+    <string name="editName">Type your Name</string>
+    <string name="textName">Cadence Kuan</string>
+
+    <string name="address">Your address:</string>
+    <string name="editAddress">Type your Address</string>
+    <string name="textAddress">Toronto</string>
+
+    <string name="profession">Your profession:</string>
+    <string name="editProfession">Past or current job</string>
+    <string name="textProfession">Mobile App</string>
+
+    <string name="dreamJob">Your dream job:</string>
+    <string name="textJob">Android Developer</string>
+
+    <string name="favoriteFood">Your favorite food:</string>
+    <string name="textFood">Pizza</string>
+
+    <string name="editJobAndFood">Type Here</string>
+
+    <string name="button">SUBMIT</string>
+    <string name="title_activity_next">NextActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
