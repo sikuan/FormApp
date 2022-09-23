@@ -16,6 +16,7 @@ class NextActivity : AppCompatActivity() {
         textView1.text=message1
 
         // I don't know how to change the below messages text
+        //Please help me to fix it
         val intent2=intent
         val message2=intent2.getStringExtra("Message2")
         val textView2=findViewById<TextView>(R.id.textView2)
