@@ -1,10 +1,10 @@
 package com.example.formapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,19 +15,27 @@ class MainActivity : AppCompatActivity() {
     fun showMessage(v: View){
         if(v.id==R.id.btnSend)
         {
-            //kotlin reference object for edit text
-            val editText=findViewById<EditText>(R.id.editName)
-            // Getting input calue from edittext object
-            val message=editText.text.toString()
-
-            //defining an intent object
             val intent= Intent(this@MainActivity, NextActivity::class.java)
-            //Intent intent=new Intent(MainActivity.this,NextActivity.class);
 
-            intent.putExtra("Message", message)
+            val editName=findViewById<EditText>(R.id.editName)
+            val messageName=editName.text.toString()
+            val editAddress=findViewById<EditText>(R.id.editAddress)
+            val messageAddress=editAddress.text.toString()
+            val editProfession=findViewById<EditText>(R.id.editProfession)
+            val messageProfession=editProfession.text.toString()
+            val editJob=findViewById<EditText>(R.id.editJob)
+            val messageJob=editJob.text.toString()
+            val editFood =findViewById<EditText>(R.id.editFood)
+            val messageFood=editFood.text.toString()
+
+            intent.putExtra("MessageName", messageName)
+            intent.putExtra("MessageAddress", messageAddress)
+            intent.putExtra("MessageProfession", messageProfession)
+            intent.putExtra("MessageJob", messageJob)
+            intent.putExtra("MessageFood", messageFood)
+
             startActivity(intent)
 
-            //Toast.makeText(applicationContext, message, Toast.LENGTH_LONG ).show()
         }
     }
 }

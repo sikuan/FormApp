@@ -34,7 +34,6 @@
             android:id="@+id/editName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:ems="10"
             android:hint="@string/editName"
             android:text="@string/textName"
@@ -110,9 +109,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/editJobAndFood"
-            android:inputType="textPostalAddress"
+            android:inputType="text"
             android:text="@string/textJob" />
-
     </LinearLayout>
 
     <!--Student Food-->

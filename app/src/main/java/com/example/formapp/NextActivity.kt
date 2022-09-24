@@ -10,32 +10,30 @@ class NextActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_next)
 
-        val intent=intent
-        val message1=intent.getStringExtra("Message")
-        val textView1=findViewById<TextView>(R.id.textView1)
-        textView1.text=message1
+        val intentName=intent
+        val messageName=intentName.getStringExtra("MessageName")
+        val nextTextViewName=findViewById<TextView>(R.id.showName)
+        nextTextViewName.text=messageName
 
-        // I don't know how to change the below messages text
-        //Please help me to fix it
-        val intent2=intent
-        val message2=intent2.getStringExtra("Message2")
-        val textView2=findViewById<TextView>(R.id.textView2)
-        textView2.text=message2
+        val intentAddress=intent
+        val messageAddress=intentAddress.getStringExtra("MessageAddress")
+        val nextTextViewAddress=findViewById<TextView>(R.id.showAddress)
+        nextTextViewAddress.text=messageAddress
 
-        val intent3=intent
-        val message3=intent3.getStringExtra("Message")
-        val textView3=findViewById<TextView>(R.id.textView3)
-        textView3.text=message3
+        val intentProfession=intent
+        val messageProfession=intentProfession.getStringExtra("MessageProfession")
+        val nextTextViewProfession=findViewById<TextView>(R.id.showProfession)
+        nextTextViewProfession.text=messageProfession
 
-        val intent4=intent
-        val message4=intent4.getStringExtra("Message")
-        val textView4=findViewById<TextView>(R.id.textView4)
-        textView4.text=message4
+        val intentJob=intent
+        val messageJob=intentJob.getStringExtra("MessageJob")
+        val nextTextViewJob=findViewById<TextView>(R.id.showJob)
+        nextTextViewJob.text=messageJob
 
-        val intent5=intent
-        val message5=intent5.getStringExtra("Message")
-        val textView5=findViewById<TextView>(R.id.textView5)
-        textView5.text=message5
+        val intentFood=intent
+        val messageFood=intentFood.getStringExtra("MessageFood")
+        val nextTextViewFood=findViewById<TextView>(R.id.showFood)
+        nextTextViewFood.text=messageFood
 
     }
 }
