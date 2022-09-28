@@ -10,10 +10,10 @@ class NextActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_next)
 
-        val intentName=intent
+        val intentName=intent //declaration get intent for name use
         val messageName=intentName.getStringExtra("MessageName")
         val nextTextViewName=findViewById<TextView>(R.id.showName)
-        nextTextViewName.text=messageName
+        nextTextViewName.text=messageName // show msg
 
         val intentAddress=intent
         val messageAddress=intentAddress.getStringExtra("MessageAddress")

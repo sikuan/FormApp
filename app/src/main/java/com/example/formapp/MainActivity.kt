@@ -17,8 +17,9 @@ class MainActivity : AppCompatActivity() {
         {
             val intent= Intent(this@MainActivity, NextActivity::class.java)
 
-            val editName=findViewById<EditText>(R.id.editName)
-            val messageName=editName.text.toString()
+
+            val editName=findViewById<EditText>(R.id.editName) //find edit text id
+            val messageName=editName.text.toString() // declare with edited text
             val editAddress=findViewById<EditText>(R.id.editAddress)
             val messageAddress=editAddress.text.toString()
             val editProfession=findViewById<EditText>(R.id.editProfession)
@@ -28,13 +29,14 @@ class MainActivity : AppCompatActivity() {
             val editFood =findViewById<EditText>(R.id.editFood)
             val messageFood=editFood.text.toString()
 
+            //Put msg to variables
             intent.putExtra("MessageName", messageName)
             intent.putExtra("MessageAddress", messageAddress)
             intent.putExtra("MessageProfession", messageProfession)
             intent.putExtra("MessageJob", messageJob)
             intent.putExtra("MessageFood", messageFood)
 
-            startActivity(intent)
+            startActivity(intent) //Start app
 
         }
     }
